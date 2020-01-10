@@ -51,9 +51,23 @@ h2{
       font-size: 23px;
       color: white;
     }
+      #button{
+        margin-top: -100px;
+      }
+    }
     </style>
     </head>
     <body>
+      <button type="button" onclick="myFunction()"> Din Julklapp</button>
+
+         <script>
+             function myFunction()
+             {
+               var julklappar = ['Iphone X', 'Hugo Boss klocka', 'Svarta Jeans', 'Glasögon', 'AirPods', 'Ps4','Nike Air Max 97'];
+               var julklapp = julklappar[Math.floor(Math.random()*julklappar.length)];
+               alert('God Jul, din julklapp är en/ett: ' + julklapp);
+             }
+         </script>
       <audio controls autoplay loop>
     <source src="Music.mp3.mp3" type="audio/ogg">
     <embed src="Music.mp3.mp3" autostart="true" loop="true" hidden="true">
